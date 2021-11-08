@@ -1,0 +1,146 @@
+body {
+  background-image: url(assets/background.jpg);
+}
+
+#main {
+  margin-left: 30px;
+}
+
+.buttons {
+  width: 150px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#btn-take {
+  border: none;
+  background: linear-gradient(0deg, #26be61, #69fa8d);
+}
+
+#btn-take:hover {
+  background: linear-gradient(0deg, #36ca6f, #83ffa2);
+}
+
+#btn-stop {
+  border: none;
+  background: linear-gradient(0deg, #be2626, #fa6e69);
+}
+
+#btn-stop:hover {
+  background: linear-gradient(0deg, #d83030, #ff8783);
+}
+
+.modal {
+  display: flex;
+}
+
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.178);
+}
+
+.modal-content {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 300px;
+  border-radius: 25px 25px 25px 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translate(-50%, -50%);
+}
+
+.modal-text {
+  margin: 90px 0 20px 0;
+  font-size: 28px;
+}
+
+.modal-content button {
+  border: none;
+  background: linear-gradient(0deg, #26be61, #69fa8d);
+}
+
+.modal-content button:hover {
+  background: linear-gradient(0deg, #1fce62, #4dc96c);
+}
+
+.modal-hide {
+  display: none;
+}
+
+#user,
+#dealer {
+  display: block;
+  min-height: 250px;
+  color: white;
+}
+
+#user-cards,
+#dealer-cards,
+#user-table,
+#dealer-table {
+  display: inline-block;
+  color: black;
+}
+
+.name-player {
+  font-size: 24px;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.none-card {
+  display: inline-flex;
+  height: 180px;
+  width: 110px;
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 2px dashed black;
+}
+
+.card {
+  display: inline-flex;
+  height: 180px;
+  width: 110px;
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: white;
+}
+
+.heart::before {
+  content: "\2665";
+  color: rgb(197, 45, 34);
+}
+.spades::before {
+  content: "\2660";
+}
+.diamond::before {
+  content: "\2666";
+  color: rgb(197, 45, 34);
+}
+.clubs::before {
+  content: "\2663";
+}
+
+.none::before {
+  content: "\2665";
+  color: rgb(197, 45, 34);
+}

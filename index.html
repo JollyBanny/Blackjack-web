@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/casino-chip.ico"
+      type="image/x-icon"
+    />
+    <title>Blackjack</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="user">
+        <div class="name-player"></div>
+        <div id="user-cards"></div>
+        <div id="user-table"></div>
+      </div>
+      <div id="dealer">
+        <div class="name-player"></div>
+        <div id="dealer-cards"></div>
+        <div id="dealer-table"></div>
+      </div>
+      <button class="buttons" id="btn-take">Hit</button>
+      <button class="buttons" id="btn-stop">Stand</button>
+      <div id="modal">
+        <div class="modal-wrap modal-hide">
+          <div class="modal-content">
+            <div class="modal-text"></div>
+            <button class="buttons" id="btn-again">play again?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/create_elements.js"></script>
+    <script src="scripts/card.js"></script>
+    <script src="scripts/localStorage.js"></script>
+    <script src="scripts/deck.js"></script>
+    <script src="scripts/players.js"></script>
+    <script src="scripts/blackjack.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
